@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_SENA_V1_Dylam-Diaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO SENA V1 - DYLAM DIAZ</h1>
+        <h4>GRACIAS POR DEJAR SUS DATOS</h4>
+    </header>
+    <main>
+        <form class="container">
+            <div class="form-group">
+                <label for="name">Nombre</label><br>
+                <input type="text" id="name" placeholder="Por favor ingrese su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Por favor ingrese su email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Edad</label><br>
+                <input type="number" id="age" placeholder="Por favor ingrese su edad" required>
+            </div>
+            <div class="form-group">
+                <label for="opcion">Elija una opción</label><br>
+                <select id="opcion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="option1">Opción A</option>
+                    <option value="option2">Opción B</option>
+                    <option value="option3">Opción C</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <div>
+                
+                <label>¿Quieres comprar un coche nuevo en los próximos 5 años?</label><br>
+                </div>
+                <input type="radio" id="yes" name="buy_car" value="yes" required>
+                <label for="yes">si</label><br>
+                <input type="radio" id="no" name="buy_car" value="no">
+                <label for="no">no</label><br>
+                <input type="radio" id="maybe" name="buy_car" value="maybe">
+                <label for="maybe">tal vez</label>
+            </div>
+
+            <div class="form-group">
+                <label for="car_brand">¿Cuál es tu marca de coche favorita?</label><br>
+                <select id="car_brand" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="option1">Opción A</option>
+                    <option value="option2">Opción B</option>
+                    <option value="option3">Opción C</option>
+                </select>
+            </div>
+            
+            <div class="form-group"></div>
+                <label>¿Qué tipo de medio de transporte posee?</label><br>
+                <input type="radio" id="car" name="transport" value="car" required>
+                <label for="car">Coche</label>
+                <input type="radio" id="boat" name="transport" value="boat">
+                <label for="boat">Barco</label>
+                <input type="radio" id="bicycle" name="transport" value="bicycle">
+                <label for="bicycle">Bicicleta</label>
+                <input type="radio" id="motorcycle" name="transport" value="motorcycle">
+                <label for="motorcycle">Motocicleta</label>
+                <input type="radio" id="plane" name="transport" value="plane">
+                <label for="plane">Avión</label>
+                <input type="radio" id="bike" name="transport" value="bike">
+                <label for="bike">Bicicleta</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">¿Algún comentario o sugerencia?</label><br>
+                <textarea id="comments" rows="4" placeholder="Por favor ingrese sus comentarios"></textarea>
+            </div>
+
+            <button type="submit" onclick="alert('¡Formulario enviado!')">ENVIAR</button>
+
+        </form>
+    </main>
+</body>
+</html>
